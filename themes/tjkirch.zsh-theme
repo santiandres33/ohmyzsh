@@ -1,5 +1,6 @@
-ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[green]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}^%{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ?"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}⚡"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
@@ -9,7 +10,7 @@ function prompt_char {
 
 PROMPT='%(?, ,%{$fg[red]%}FAIL: $?%{$reset_color%}
 )
-%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)
+%{$fg[blue]%}%n%{$reset_color%}%{$fg[blue]%}@%{$fg[blue]%}%m%{$reset_color%} %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)
 $(prompt_char) '
 
-RPROMPT='%{$fg[green]%}[%*]%{$reset_color%}'
+RPROMPT='%{$fg[green]%}[%D{%d%m %H:%M}]%{$reset_color%}'
