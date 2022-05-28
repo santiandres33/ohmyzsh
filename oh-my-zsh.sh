@@ -185,3 +185,6 @@ if [[ -n "$ZSH_THEME" ]]; then
     echo "[oh-my-zsh] theme '$ZSH_THEME' not found"
   fi
 fi
+
+
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
