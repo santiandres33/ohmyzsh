@@ -99,3 +99,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+
+HISTCONTROL=ignoredups:erasedups 
+HISTSIZE=50000
+SAVEHIST=20000
+#Keeping the same history along different terminal panes/windows/tabs
+#PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+  
+  
