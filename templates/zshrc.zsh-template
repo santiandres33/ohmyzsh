@@ -104,7 +104,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rm="rm -i"
 
+##MACOS
+#alias trash="rmtrash"
+#alias   del="rmtrash"
 
+##LIMUX
+#alias del="trash"
 
 
 HISTCONTROL=ignoredups:erasedups 
